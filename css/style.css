@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	width:100%;
+	height:100%;
+}
+.TLDlax {width:100%;height:100%;font-family: "helvetica", sans-serif;}
+h1, h2, h3, h4 {letter-spacing: 10px;text-transform: uppercase;color: #ffffff;font-weight: 600;}
+h1 {font-size:36px;}
+h2 {font-size:30px;}
+h3 {font-size:26px;}
+h4 {font-size:20px;}
+.copy {color:#ffffff;}
+.hilite {color:#ff3c00;}
+.navigation{
+	position:fixed;
+	z-index:1;
+	top:40%;
+	right:0;
+}
+.navigation li{
+	background: rgba(255,255,255,0.5);
+	color:#333333;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:2px;
+	font-weight:bold;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	text-align:left;
+	width:120px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.navigation li:hover {background: #ff0000;color:#ffffff;}
+.navigation li:hover, .active {
+	font-size:16px;
+	cursor:pointer;
+	width:130px !important;
+}
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	overflow: hidden;
+}
+.wrapper{
+	position: relative;
+	width: 100%;
+	padding: 50px;
+	margin: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.wrapper.bottom{position:absolute;bottom:0;}
+.wrapper.right{position:absolute;right:0;height:100%;width: 20%;padding-right:160px;}
+.wrapper.left{position:absolute;left:0;height:100%;width: 20%;}
+.slideno{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-25px;
+	transition: ease-in-out all .5s;
+
+	background-image:url(../images/arrow.png);
+}
+.buttonup {        
+		-moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";}
+.button:hover{
+	background-color:#ff0000;
+	cursor:pointer;
+}
+.popspot {
+    background-color: rgba(255,0,0,0.75);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    border: 5px solid rgba(255,255,255,0.75);
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 0em;
+    transition: ease-in-out all .2s;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 7px;
+}
+button.popspot:focus{outline:none;}
+.popspot:hover {    
+	font-size: 30px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    padding-bottom: 10px;
+}
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1 {
+	background: url(../images/offroad/intro-bg.jpg) 50% 0 no-repeat fixed;
+	background-color:000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide1 > img:nth-child(1){
+	position:absolute;
+	top: -100px;
+	left: 30%;
+}
+
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+	background-image: url(../images/offroad/inner-bg.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color:#000000;
+}
+#slide2 img:first-child{
+	position:absolute;
+top: 0;
+left: 0;
+}
+/******************************
+ SLIDE 3 
+*******************************/
+#slide3{
+	background-image:url(../images/offroad/outer-bg.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color:#000000;
+}
+#slide3 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide3 img:nth-child(2){
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/******************************
+ SLIDE 4 
+*******************************/
+
+#slide4{
+	background-position:50% 0;
+	background-image:url(../images/offroad/accy-bg.jpg);
+	background-attachment: scroll;
+	background-color: #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/******************************
+ SLIDE 5 
+*******************************/
+
+#slide5{
+	background-image:url(../images/offroad/safety-bg.jpg);
+	background-color: #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide5 img:first-child{
+	position:absolute;
+bottom: 0px;
+right: 0px;
+}
+/******************************
+ SLIDE 6
+*******************************/
+
+#slide6{
+	background-position:50% 0;
+	background-image:url(../images/offroad/video-bg.jpg);
+	background-attachment: scroll;
+	background-color: #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 720px;
+}
+#slide6 img:first-child{
+	position:absolute;
+	top: -150px;
+	left: 0px;
+}
+/******************************
+ SLIDE 7
+*******************************/
+
+#slide7{
+	background-color: #cccccc;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+}
