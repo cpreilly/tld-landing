@@ -46,6 +46,11 @@ h4 {font-size:20px;}
 	height:100%;
 	position: relative;
 	overflow: hidden;
+	background-color:#000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .wrapper{
 	position: relative;
@@ -120,12 +125,6 @@ button.popspot:focus{outline:none;}
  SLIDE 1 
 *******************************/
 #slide1 {
-	background: url(../images/offroad/intro-bg.jpg) 50% 0 no-repeat fixed;
-	background-color:000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 #slide1 > img:nth-child(1){
 	position:absolute;
@@ -137,12 +136,6 @@ button.popspot:focus{outline:none;}
  SLIDE 2 
 *******************************/
 #slide2{
-	background-image: url(../images/offroad/inner-bg.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-color:#000000;
 }
 #slide2 img:first-child{
 	position:absolute;
@@ -153,11 +146,6 @@ left: 0;
  SLIDE 3 
 *******************************/
 #slide3{
-	background-image:url(../images/offroad/outer-bg.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-color:#000000;
 }
 #slide3 img:first-child{
 	position:absolute;
@@ -174,26 +162,14 @@ left: 0;
 *******************************/
 
 #slide4{
-	background-position:50% 0;
-	background-image:url(../images/offroad/accy-bg.jpg);
 	background-attachment: scroll;
-	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 /******************************
  SLIDE 5 
 *******************************/
 
 #slide5{
-	background-image:url(../images/offroad/safety-bg.jpg);
 	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 #slide5 img:first-child{
 	position:absolute;
@@ -205,14 +181,7 @@ right: 0px;
 *******************************/
 
 #slide6{
-	background-position:50% 0;
-	background-image:url(../images/offroad/video-bg.jpg);
 	background-attachment: scroll;
-	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	height: 720px;
 }
 #slide6 img:first-child{
@@ -226,9 +195,5 @@ right: 0px;
 
 #slide7{
 	background-color: #cccccc;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	height: 300px;
 }
