@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
 
-
   Pre.i($('.slide'), function(percentage) {
     console.log( percentage * 400 );
     $('.loader > .progress > .complete').css('width', (percentage*400) + 'px');
@@ -10,7 +9,6 @@ jQuery(document).ready(function ($) {
     _.off('.loader');
     _.on('.TLDlax');
   });
- 
     //init fadethis.js
     $(window).fadeThis();
 

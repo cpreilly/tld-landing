@@ -10,6 +10,7 @@ html,body{
   width:100%;
   height:100%;
   font-family: "helvetica", sans-serif;
+  z-index: 10;
 }
 
 .TLDlax.on {
@@ -212,19 +213,29 @@ right: 0px;
 }
 
 .loader {
+  top: 0px;
+  left: 0px;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 200px;
   background-color: #000000;
   text-align: center;
+  transition: transform 1s ease-in-out;
+  z-index: 100;
+}
 
+.loader.on {
+  transform: translate(0, 0px);
+}
+
+.loader.off {
+  transform: translate(0px, -200px);
 }
 
 .loader > .copy {
-
   color: white;
   font-size: 40px;
-  padding: 200px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 .loader > .progress {
