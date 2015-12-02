@@ -1,103 +1,465 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<title>Off-Road Adventure Moto Gear | Troy Lee Designs&reg;</title>
-
-<link rel="stylesheet" type="text/css" href="css/reset-min.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Off-Road Adventure Moto Gear | Troy Lee Designs &reg;</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+<!--<link rel="stylesheet" type="text/css" href="css/reset-min.css">-->
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--<link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css">-->
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/jquery.stellar.js"></script>
-<script type="text/javascript" src="js/waypoints.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.fadethis.js"></script>
-<script type="text/javascript" src="jst/main.js"></script>
-<script type="text/javascript" src="jst/pre.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-
 <body>
-
-
-<div class="TLDlax off">
+<div class="TLDlax">
 	<ul class="navigation">
 		<li data-slide="1" class="active">Intro</li>
-		<li data-slide="2">Base Wear</li>
-		<li data-slide="3">Outer Wear</li>
+		<li data-slide="2">Base Gear</li>
+		<li data-slide="3">Jackets</li>
 		<li data-slide="4">Accessories</li>
-		<li data-slide="5">Safety</li>
+		<li data-slide="5">Pants</li>
 		<li data-slide="6">Video</li>
 		<li data-slide="7">Shop</li>
 	</ul>
-	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5" style="background-position: 50% 0px;background-image:url(images/offroad/intro-bg.jpg);">
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5" >
 		<img src="images/offroad/intro-cloud.png" data-stellar-ratio=".75" data-stellar-vertical-offset="0" alt="" >
 		<div class="wrapper bottom" data-stellar-ratio="1.5">
 			<img src="images/offroad/intro-logo.png" alt="" >
 			<h1 class="hilite slide-left">2016 Off-Road Gear</h1>
 			<h2 class="slide-bottom">Riding the world one trail at a time</h2>
 		</div>
-		<a class="button" data-slide="2" title=""></a>
+		<a class="dbutton" data-slide="2" title=""><span class="glyphicon glyphicon-chevron-down"></span></a>
 	</div><!--End Slide 1-->
-	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="1" style="background-position: 50% 0px;background-image:url(images/offroad/inner-bg.jpg);">
-		<div class="wrapper right"><span class="copy slide-right">Rear integrated storage pocket for removable sleeves and supplies that might come in handy being on the open road. Flap to cover pocket opening. Multiple reflective strips guarantee visibility on the open road. Jacket comes with multiple waterproof zippered chest, arm, and rear exhaust vents. Jacket also provides waterproof zippered storage pockets</span></div>
-		<img src="images/offroad/inner-dust.png" data-stellar-ratio=".8" alt="" >
-		<span class="slideno">Slide 2</span>
-		<a class="button" data-slide="3" title=""></a>
+  <div class="slide flexctr" id="intro">
+    <div class="container">
+      <div class="row">
+        <span class="col-md-6">
+          <img src="images/offroad/intro-logo.png" alt="" >
+        </span>
+        <div class="col-md-6 intro">
+          <p class="copy">For the off-road enthusiast who rides trails, loves adventure and a different way of riding, we introduce the Adventure Line of rugged, safety minded off-road gear. From ultra-light vented Radius gear to heavy-duty, weather proof Hydro and Rev Gear. Troy Lee Designs off-road gear will suit every riders needs with offerings of relaxed over the boot fitment, to a race orientated off-road styled gear. TLD adventure gear comes with the latest safety features and design aesthetics to look great will riding to your true potential. To top it off we offer riding packs and vests so you are never left stranded and have the necessary kit while you ride.</p>
+        </div>
+  </div>
+  </div>
+  </div><!--End Intro-->
+	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="1" >
+    <img src="images/offroad/inner-dust.png" data-stellar-ratio=".8" alt="" >
+		<div class="wrapper right">
+      <span class="slide-right"><h2>Radius Gear</h2>
+        <p class="copy">Light-weight, race inspired off-road gear.</p>
+      </span>
+        <div class="slide-right popitem">
+          <img src="images/offroad/radius-jersey.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalJ" data-imagenumber="0">&#43;</button>
+          <span>Light-weight Race Inspired Radius Jersey</span>
+        </div>
+        <div class="slide-right popitem">
+          <img src="images/offroad/radius-pant.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalP" data-imagenumber="0">&#43;</button>
+          <span>Durable Race Inspired Radius Pant</span>
+        </div>
+        <div class="slide-bottom popitem">
+          <img src="images/offroad/radius-glove.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalG" data-imagenumber="0">&#43;</button>
+          <span>Protective Off-Road Radius Glove</span>
+        </div>
+      </div>
+         <div class="modal fade" id="popModalJ" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">RADIUS JERSEY</h4>
+            </div>
+            <div class="modal-body">
+              <p>Micro mesh in arm yokes allows for airflow. Denier nylon reinforced elbow pads with internal foam padding.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>150 gram polyester main body construction</li>
+                <li>200 gram micro mesh in arm yokes allows for airflow</li>
+                <li>Multiple reflective logos and panels for added safety</li>
+                <li>222 gram ripstop at end of sleeves for added durability from snags</li>
+                <li>300 denier nylon reinforced elbow pads with internal foam padding</li>
+                <li>Unique heat transfer emergency label for critical rider information</li>
+              </ul>
+              <img src="images/offroad/hydro-jacket-back.jpg" alt="TLD Hydro Jacket" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="modal fade" id="popModalP" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">RADIUS PANT</h4>
+            </div>
+            <div class="modal-body">
+              <p>Leather inner leg burn panel. Zippered exhaust vents. Stretch panels for perfect fit and function.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>12” double YKK&reg; zippered front vent panels</li>
+                <li>Kevlar padded knee for added durability</li>
+                <li>600 denier oxford polyester construction</li>
+                <li>900 denier oxford polyester butt panel</li>
+                <li>Reflective zippered exhaust vents</li>
+                <li>Full length premium leather inner leg burn panel</li>
+                <li>Ratchet buckle closure</li>
+                <li>Pant has more performance shape and fit</li>
+                <li>Reflective graphics on knee and pocket flaps</li>
+                <li>Multiple stretch panels for perfect fit and function</li>
+                <li>Integrated cargo pockets</li>
+              </ul>
+              <img src="images/offroad/radius-pant-detail.jpg" alt="TLD Radius Pant Detail" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="modal fade" id="popModalG" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">RADIUS GLOVE</h4>
+            </div>
+            <div class="modal-body">
+              <p>The Adventure glove is equipped with many technical features. Every adventure seeking rider will benefit from the added poron XRD&reg; padding that is added onto the knuckle and palm areas. The Flo Orange color will be very beneficial to those that find themselves needing an extra hand on the road. Flash people down with no problem waiving the super vibrant flo orange color that can not be missed.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>Ax Cube&reg; flo orange palm for flashing down help</li>
+                <li>Lycra fourchettes and thumb flex panel</li>
+                <li>Premium goat skin leather sewn over 6mm poron XRD&reg;</li>
+                <li>Tapered index finger with AX Connect&reg; touch screen material</li>
+                <li>Sewn sheep skin stretch panels</li>
+                <li>Printed silicone finger grippers</li>
+                <li>Clarino&reg; reinforced palm w/ 2mm poron XRD&reg; shock pads</li>
+                <li>Scotchlite&reg; reflective panels</li>
+                <li>Flexible span 4-way upper</li>
+                <li>TPR graphics and Velcro&reg; closure</li>
+                <li>Airprene cuff for added support</li>
+              </ul>
+              <img src="images/offroad/hydro-jacket-back.jpg" alt="TLD Hydro Jacket" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+		<a class="dbutton" data-slide="3" title=""><span class="glyphicon glyphicon-chevron-down"></span></a>
 	</div><!--End Slide 2-->
-	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5" style="background-position: 50% 0px;background-image:url(images/offroad/outer-bg.jpg);">
-		<img src="images/offroad/outer-drops.png" data-stellar-ratio=".2" data-stellar-vertical-offset="0" alt="">
-		<img src="images/offroad/outer-streaks.png" data-stellar-ratio="-3.5" data-stellar-vertical-offset="-75" alt="">
-		<div class="wrapper left">
-			<div class="copy slide-left">
-				<p>Rear integrated storage pocket for removable sleeves and supplies that might come in handy being on the open road. Flap to cover pocket opening. Multiple reflective strips guarantee visibility on the open road. Jacket comes with multiple waterproof zippered chest, arm, and rear exhaust vents. Jacket also provides waterproof zippered storage pockets.</p>
-				<h3>FEATURES</h3> 
-				<ul>
-					<li>Waterproof breathable hipora 600 denier oxford construction</li>
-					<li>Removable sleeves</li>
-					<li>Taped seams</li>
-					<li>YKK® waterproof zippered chest, arm and rear exhaust vents</li>
-					<li>Lower bellowed waterproof storage pockets</li>
-					<li>CE molded YF® integrated elbow and shoulder pads</li>
-					<li>Scotchlite® reflective panels throughout front and back</li>
-					<li>Rear integrated storage pocket for sleeves and supplies</li>
-					<li>Custom waterproof breast pocket with added media port for smart phone earphone</li>
-					<li>Fleece lined hand warmer pockets</li>
-					<li>Side YKK® zippered expansion pleats</li>
-					<li>Dual adjustable compression arm straps and torso straps</li>
-					<li>Fleece lined collar w/ spring loaded Velcro® snap closure</li>
-				</ul>
-			</div>
-			<button type="button" class="btn btn-default popspot" data-toggle="modal" data-target="#popspotModal" data-imagenumber="0">&#43;</button>
-			<div class="modal fade hotspotModal" id="hotspotModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
-		</div>
-		<span class="slideno">Slide 3</span>
-		<a class="button" data-slide="4" title=""></a>
-	</div><!--End Slide 3-->
-	<div class="slide" id="slide4" data-slide="4" style="background-position: 50% 0px;background-image:url(images/offroad/accy-bg.jpg);">
-		<div class="wrapper right">	a</div>
-		<span class="slideno">Slide 4</span>
-		<a class="button" data-slide="5" title=""></a>
+  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5" >
+    <img src="images/offroad/outer-drops.png" data-stellar-ratio=".2" data-stellar-vertical-offset="0" alt="">
+    <img src="images/offroad/outer-streaks.png" data-stellar-ratio="-3.5" data-stellar-vertical-offset="-75" alt="">
+    <div class="wrapper left">
+      <div class="slide-left">
+        <h2>Off-Road Jackets</h2>
+        <p class="copy">Weatherproof Protective Outer-Wear</p>
+      </div>
+        <div class="slide-left popitem">
+          <img src="images/offroad/hydro-jacket.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalHJ" data-imagenumber="0">&#43;</button>
+          <span>Heavy-Duty Waterproof Hydro Jacket</span>
+        </div>
+        <div class="slide-bottom popitem">
+          <img src="images/offroad/radius-jacket.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalRJ" data-imagenumber="0">&#43;</button>
+          <span>Protective Water Resistant Radius Jacket</span>
+        </div>
+      </div>
+      <div class="modal fade" id="popModalHJ" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">HYDRO JACKET</h4>
+            </div>
+            <div class="modal-body">
+              <p>Rear integrated storage pocket for removable sleeves and supplies that might come in handy being on the open road. Flap to cover pocket opening. Multiple reflective strips guarantee visibility on the open road. Jacket comes with multiple waterproof zippered chest, arm, and rear exhaust vents. Jacket also provides waterproof zippered storage pockets.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>Waterproof breathable hipora 600 denier oxford construction</li>
+                <li>Removable sleeves</li>
+                <li>Taped seams</li>
+                <li>YKK&reg; waterproof zippered chest, arm and rear exhaust vents</li>
+                <li>Lower bellowed waterproof storage pockets</li>
+                <li>CE molded YF&reg; integrated elbow and shoulder pads</li>
+                <li>Scotchlite&reg; reflective panels throughout front and back</li>
+                <li>Rear integrated storage pocket for sleeves and supplies</li>
+                <li>Custom waterproof breast pocket with added media port for smart phone earphone</li>
+                <li>Fleece lined hand warmer pockets</li>
+                <li>Side YKK&reg; zippered expansion pleats</li>
+                <li>Dual adjustable compression arm straps and torso straps</li>
+                <li>Fleece lined collar w/ spring loaded Velcro&reg; snap closure</li>
+              </ul>
+              <img src="images/offroad/hydro-jacket-back.jpg" alt="TLD Hydro Jacket" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popModalRJ" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">RADIUS JACKET</h4>
+            </div>
+            <div class="modal-body">
+              <p>Padded elbow pads. To ensure added safety to the rider we use Retro-Reflective material which reflects light back to the source and illuminates the rider. Retro-reflective material provides additional visual cues to others and are far more effective than just bright clothing alone. Jacket comes with multiple waterproof zippered chest, and rear exhaust vents. Jacket also provides waterproof zippered storage pockets.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>420 denier water resistant oxford upper torso and top of sleeves</li>
+                <li>300 denier water resistant oxford polyester torso and underarms</li>
+                <li>Waterproof YKK&reg; zippered breast storage pocket</li>
+                <li>YKK&reg; zippered vent and hand warmer pockets</li>
+                <li>nternalized elastic waist gather</li>
+                <li>Removable sleeves</li>
+                <li>Velcro&reg; wrist closures</li>
+                <li>Rear integrated storage pocket for sleeves and supplies</li>
+                <li>Integrated lower zippered expansion pleats</li>
+                <li>Reflective logo on front and rear for night sections</li>
+                <li>600 denier polyester padded elbow panels</li>
+              </ul>
+              <img src="images/offroad/radius-jacket-pocket.jpg" alt="TLD Radius Jacket" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <a class="dbutton" data-slide="4" title=""><span class="glyphicon glyphicon-chevron-down"></span></a>
+  </div><!--End Slide 3-->
+
+	<div class="slide" id="slide4" data-slide="4" >
+		<div class="wrapper right"><h2>Off-Road Packs</h2><p class="copy">Rugged Gear Packs &amp; Vests</p>
+        <div class="slide-right popitem">
+          <img src="images/offroad/ranger-pack.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalRP" data-imagenumber="0">&#43;</button>
+          <span>Quick Mount Hip Pack</span>
+        </div>
+        <div class="slide-right popitem">
+          <img src="images/offroad/transfer-vest.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalTV" data-imagenumber="0">&#43;</button>
+          <span>Safety Vest &amp; Gear Pack</span>
+        </div>
+    </div>
+      <div class="modal fade" id="popModalRP" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">RANGER HIP PACK</h4>
+            </div>
+            <div class="modal-body">
+              <p>Interior tool pouch features a unique storage strap system with Versa-Clip&reg; tool keeper. You will be able to place a variety of tools and gadgets needed for that amazing adventure that is just a ride away. The Versa-Clip&reg; system allows you to become creative in the way you fasten down you’re tools and gadgets. Clear pouch over tool section is ideal for a map and also any extra tire tubes that might be necessary. TOOLS NOT INCLUDED.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>Tough 500 denier oxford polyester</li>
+                <li>Unique heat transfer emergency label for critical rider information</li>
+                <li>Tacky grip synthetic leather backing helps to grip your pants and jersey during rides</li>
+                <li>Durable outer cover flap with dual fastec clips and Velcro&reg; flap closure</li>
+                <li>Outer flap has loop in horizontal webbing to add an LED strobe for night rides</li>
+                <li>Dual outer waist pouches with formed EVA outer panels for impact resistance</li>
+                <li>One outer waist pouch has an expandable pouch for added storage if needed</li>
+                <li>Adjustable waist strap with elastic loop to manage excess webbing when adjusted</li>
+                <li>Outer flap has clear vinyl inner liner with YKK&reg; zippered opening</li>
+                <li>Unique elastic velcro tension feature at waist belt keeps your pack tight around your waist during rides</li>
+                <li>Interior tool pouch features a unique storage strap system with Versa-Clip&reg; tool keeper</li>
+                <li>Large outer YKK&reg; zippered pocket for additional storage</li>
+              </ul>
+              <img src="images/offroad/ranger-pack-detail.jpg" alt="TLD Ranger Pack Detail" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popModalTV" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">TRANSFER VEST</h4>
+            </div>
+            <div class="modal-body">
+              <p>Dual front quick access Velcro&reg; pockets. Front integrated molle straps to allow you to add a MOLLE integrated item. Saftey snap incorporated into pocket. Reflective patches. Lower rear storage pocket. Internal hydration bladder pocket. TOOLS NOT INCLUDED.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>Durable 500 denier item specific construction and layout</li>
+                <li>Safety orange lined interior with EVA foam ribbed construction allows air flow</li>
+                <li>Vest can be worn in reverse as a warning or safety vest in critical situations</li>
+                <li>Integrated back pack to store what you need for that overnight trip on the trail</li>
+                <li>Handheld radio pouch with safety snap</li>
+                <li>Quick access leatherman tool pocket is easily accessed if needed for cactus quills or fencing wire</li>
+                <li>Spot locator specific pocket</li>
+                <li>All YKK&reg; zippers throughout. One breast pocket is waterproof with YKK&reg; zipper</li>
+                <li>Reflective patches throughout for added safety</li>
+                <li>Front breast flashlight pocket</li>
+                <li>Dual front YKK&reg; zippered storage pockets</li>
+                <li>Integrated neoprene media pouch for smartphone and earphone integration</li>
+                <li>Unique heat transfer emergency label for critical rider information on inside panel</li>
+              </ul>
+              <img src="images/offroad/transfer-vest-detail.jpg" alt="TLD Transfer Vest Detail" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+		<a class="dbutton" data-slide="5" title=""><span class="glyphicon glyphicon-chevron-down"></span></a>
 	</div><!--End Slide 4-->
-	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5" style="background-position: 50% 0px;background-image:url(images/offroad/safety-bg.jpg);">
-		<img src="images/offroad/safety-dirt.png" data-stellar-ratio=".75" alt="">
-		<div class="wrapper"></div>
-		<a class="button" data-slide="6" title=""></a>
+	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5" >
+		<div class="wrapper left"><h2>Off-Road Pants</h2><p class="copy">Over The Boot Weatherproof Pants</p>
+        <div class="slide-left popitem">
+          <img src="images/offroad/hydro-pant.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalHP" data-imagenumber="0">&#43;</button>
+          <span>Waterproof Protective Adventure Pant</span>
+        </div>
+        <div class="slide-bottom popitem">
+          <img src="images/offroad/rev-pant.png" class="popimg">
+          <button type="button" class="popspot" data-toggle="modal" data-target="#popModalR" data-imagenumber="0">&#43;</button>
+          <span>Zip-Off Off-Road Protective Pant</span>
+        </div>
+    </div>
+      <div class="modal fade" id="popModalHP" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">HYDRO PANT</h4>
+            </div>
+            <div class="modal-body">
+              <p>Genuine premium leather inner leg panel. Storage pocket with YKK® zipper.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>Waterproof breathable hipora 600 denier oxford</li>
+                <li>All waterproof YKK&reg; zippers</li>
+                <li>12” 2 Way YKK&reg; front vent thigh panel</li>
+                <li>900 denier oxford butt and crotch panels</li>
+                <li>Kevlar knee panel</li>
+                <li>Genuine premium leather inner leg panel</li>
+                <li>Internal over the boot neoprene gaiter</li>
+                <li>Sans belt waist construction</li>
+                <li>Integrated cargo pockets and exhaust vents</li>
+                <li>Reflective graphics on knee and pocket flaps</li>
+                <li>Large Scotchlite&reg; reflective panel on backs of leg cuffs</li>
+                <li>Over the boot design with 3 snap adjustment and elastic gather</li>
+                <li>Small personal storage pocket</li>
+              </ul>
+              <img src="images/offroad/hydro-pant-detail.jpg" alt="TLD Hydro Pant Detail" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popModalR" tabindex="-1" role="dialog" aria-labelledby="popModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="popModalLabel">REV PANT</h4>
+            </div>
+            <div class="modal-body">
+              <p>Rear storage pocket. Zip-off lower leg section converts pants to shorts.</p>
+              <h5>FEATURES</h5> 
+              <ul>
+                <li>Zip-off lower leg section converts pants to shorts</li>
+                <li>Exclusive TLD Dual Zipper System allows pants to adjust approximately 1 1/2” shorter</li>
+                <li>Sewn-In mesh liner above the knees for increased comfort and air circulation</li>
+                <li>Ratchet waist closure provides fine tuned adjustments for ultimate comfort</li>
+                <li>Combination of 600 polyester and 1680 denier ballistic nylon is durable yet lightweight</li>
+                <li>Leather inner right knee</li>
+                <li>Three zippered pockets - 1 rear and 2 side</li>
+                <li>Velcro&reg; adjustable boot bottom</li>
+                <li>Reflective piping</li>
+              </ul>
+              <img src="images/offroad/radius-jacket-pocket.jpg" alt="TLD Radius Jacket" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a type="button" class="btn btn-primary" href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+		<a class="dbutton" data-slide="6" title=""><span class="glyphicon glyphicon-chevron-down"></span></a>
 	</div><!--End Slide 5-->
-	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio=".75" style="background-position: 50% 0px;background-image:url(images/offroad/video-bg.jpg);">
-		<img src="images/offroad/video-mtns.png" alt="">
-		<a href="https://www.youtube.com/embed/HGtuCdCa3_0" class="ftrbutton">Play A Fucking Video</a>	
-		<a class="button buttonup" data-slide="1" title=""></a>
+	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio=".75">
+		<div class="wrapper">
+		<h3>Adventure Offroad Product Videos</h3>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/96pr1UnRIHg"><span class="glyphicon glyphicon-play-circle"></span>Watch Radius Gear Features Video</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/gEv7jtBrC7I"><span class="glyphicon glyphicon-play-circle"></span>Watch Radius Jacket Features</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/ti4oGztLnmk"><span class="glyphicon glyphicon-play-circle"></span>Watch Hydro Jacket Video</button>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/NrNR4LUpXrw"><span class="glyphicon glyphicon-play-circle"></span>Watch Hip-Pack Video</button>
+</div>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="500" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<a class="dbutton" data-slide="1" title=""><span class="glyphicon glyphicon-chevron-up"></span></a>
 	</div><!--End Slide 6-->
 	<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5" style="background-position: 50% 0px;">
+    <div class="container fill">
+      <div class="row shop">
+        <div class="col-sm-4 text-center"><a href="#" class="btn btn-primary">Find Dealers<span class="glyphicon glyphicon-map-marker"></span></a></div>
+        <div class="col-sm-4 text-center"><a href="#" class="btn btn-primary bigger">Shop Adventure<span class="glyphicon glyphicon-triangle-right"></span></a></div>
+        <div class="col-sm-4 text-center"><a href="#" class="btn btn-primary">Shop Moto<span class="glyphicon glyphicon-triangle-right"></span></a></div>
+      </div>
+    </div>
 	</div><!--End Slide 7-->
 
 </div>
-<div class="loader on">
-  <div class="copy">Loading</div>
-  <div class="progress"><div class="complete"></div></div>
-</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+   <!-- <script type="text/javascript" src="js/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
+<script src="js/jquery.fadethis.js"></script>
 
 
 </body></html>

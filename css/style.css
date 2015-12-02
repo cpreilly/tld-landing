@@ -5,28 +5,15 @@ html,body{
 	width:100%;
 	height:100%;
 }
-
-.TLDlax {
-  width:100%;
-  height:100%;
-  font-family: "helvetica", sans-serif;
-  z-index: 10;
-}
-
-.TLDlax.on {
-  display: block;
-}
-.TLDlax.off {
-  display: none;
-}
-
-h1, h2, h3, h4 {letter-spacing: 10px;text-transform: uppercase;color: #ffffff;font-weight: 600;}
-h1 {font-size:36px;}
+.TLDlax {width:100%;height:100%;font-family: "helvetica", sans-serif;}
+h1, h2, h3, h4 {letter-spacing: 5px;text-transform: uppercase;color: #ffffff;font-weight: 600;}
+h1 {font-size:36px;letter-spacing: 10px;}
 h2 {font-size:30px;}
 h3 {font-size:26px;}
 h4 {font-size:20px;}
 .copy {color:#ffffff;}
 .hilite {color:#ff3c00;}
+.bigger {font-size:150% !important;}
 .navigation{
 	position:fixed;
 	z-index:1;
@@ -60,31 +47,18 @@ h4 {font-size:20px;}
 	height:100%;
 	position: relative;
 	overflow: hidden;
-	background-color:#000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 .wrapper{
 	position: relative;
 	width: 100%;
-	padding: 50px;
+	padding: 20px 50px;
 	margin: 0;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(68, 74, 82, .75);
 }
 .wrapper.bottom{position:absolute;bottom:0;}
-.wrapper.right{position:absolute;right:0;height:100%;width: 20%;padding-right:160px;}
-.wrapper.left{position:absolute;left:0;height:100%;width: 20%;}
-.slideno{
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	font-size:100px;
-	font-weight:bold;
-	color:rgba(255,255,255,0.3);
-}
-.button{
+.wrapper.right{background: rgba(255, 255, 255, 0.35);position:absolute;right:0;height:100%;width: 35%;padding-right:160px;max-width: 660px;}
+.wrapper.left{background: rgba(255, 255, 255, 0.35);position:absolute;left:0;height:100%;width: 35%;max-width: 500px;}
+.dbutton{
 	display:block;
 	width:50px;
 	height:50px;
@@ -93,19 +67,15 @@ h4 {font-size:20px;}
 	left:50%;
 	margin-left:-25px;
 	transition: ease-in-out all .5s;
-
-	background-image:url(../images/arrow.png);
+	font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.75em;
 }
-.buttonup {        
-		-moz-transform: scaleY(-1);
-        -o-transform: scaleY(-1);
-        -webkit-transform: scaleY(-1);
-        transform: scaleY(-1);
-        filter: FlipV;
-        -ms-filter: "FlipV";}
-.button:hover{
+.dbutton:hover{
 	background-color:#ff0000;
 	cursor:pointer;
+	color:#ffffff;
 }
 .popspot {
     background-color: rgba(255,0,0,0.75);
@@ -118,6 +88,8 @@ h4 {font-size:20px;}
     border-radius: 50px;
     text-align: center;
     position: absolute;
+    left:30%;
+    top:30%;
     color: #ffffff;
     font-size: 24px;
     line-height: 0em;
@@ -125,33 +97,101 @@ h4 {font-size:20px;}
     width: 50px;
     height: 50px;
     text-align: center;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
 }
 button.popspot:focus{outline:none;}
 .popspot:hover {    
 	font-size: 30px;
     cursor: pointer;
     transform: rotate(180deg);
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
+.popimg {width:100%;}
+.popitem {
+    position: relative;
+    width: 75%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.popitem span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70%;
+    left: 0;
+    background: rgba(255,255,255,0.5);
+    padding: 10px 5px;
+}
+.btn-default, .btn-default:visited, .btn-primary, .btn-primary:visited {
+	background: #ff2c2c;
+    color: #ffffff;
+    border-radius: 0;
+    border: none;
+    padding: 10px 20px;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: ease-in-out all .2s;
+}
+.btn-default:hover, .btn-primary:hover {background:#ff5858;color:#ffffff;text-shadow: 2px 2px 0px #de1e1e;}
+.btn-default:active, .btn-default:focus, .btn-primary:active, .btn-primary:focus {border:none;background:#de1e1e;color:#ffffff;text-shadow:none;}
+.flexctr{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 
+}
+.shop {line-height: 300px;}
 /******************************
  SLIDE 1 
 *******************************/
 #slide1 {
+	background: url(../images/offroad/intro-bg.jpg) 50% 0 no-repeat fixed;
+	background-color:000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 #slide1 > img:nth-child(1){
 	position:absolute;
 	top: -100px;
 	left: 30%;
 }
+/******************************
+ Intro
+*******************************/
+#intro{
+	background: #444a52;
+	height: 400px;
+	margin: 0 auto;
+}
 
+.intro p {
+    color: #ddd;
+    border-left: 1px solid #686d73;
+    padding-left: 50px;
+}
 /******************************
  SLIDE 2 
 *******************************/
 #slide2{
+	background-image: url(../images/offroad/inner-bg.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color:#000000;
 }
-#slide2 img:first-child{
+#slide2 > img:first-child{
 	position:absolute;
 top: 0;
 left: 0;
@@ -160,13 +200,19 @@ left: 0;
  SLIDE 3 
 *******************************/
 #slide3{
+	background-position:50% 0;
+	background-image:url(../images/offroad/outer-bg.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color:#000000;
 }
-#slide3 img:first-child{
+#slide3 > img:first-child{
 	position:absolute;
 	top: 0px;
 	left: 0px;
 }
-#slide3 img:nth-child(2){
+#slide3 > img:nth-child(2){
 	position:absolute;
 	top:0px;
 	left:0px;
@@ -176,106 +222,104 @@ left: 0;
 *******************************/
 
 #slide4{
+	background-position:50% 0;
+	background-image:url(../images/offroad/accy-bg.jpg);
 	background-attachment: scroll;
+	background-color: #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 /******************************
  SLIDE 5 
 *******************************/
 
 #slide5{
+	background-image:url(../images/offroad/pants-bg.jpg);
 	background-color: #000000;
-}
-#slide5 img:first-child{
-	position:absolute;
-bottom: 0px;
-right: 0px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 /******************************
  SLIDE 6
 *******************************/
 
 #slide6{
+	background-position:50% 0;
+	background-image:url(../images/offroad/video-bg.jpg);
 	background-attachment: scroll;
+	background-color: #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	height: 720px;
-	z-index: -100;
 }
-#slide6 img:first-child{
-	position:absolute;
-	top: -150px;
-	left: 0px;
-	z-index: -10;
-}
+#slide6 .wrapper {text-align: center;}
+#slide6 .wrapper .btn-default {margin:10px;}
 /******************************
  SLIDE 7
 *******************************/
 
 #slide7{
-	background-color: #cccccc;
+	background: #444a52;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	height: 300px;
 }
+/******************************
+ VIDEO MODAL
+*******************************/
 
-.loader {
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  text-align: center;
-  display: block;
-  transition: transform 1s ease-in-out;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  -ms-transition: -ms-transform 1s ease-in-out;
-  -moz-transition: -moz-transform 1s ease-in-out;
-  z-index: 100;
+.modal-header {padding: 0 15px;border-bottom: 1px solid #666;}
+.modal-title {padding: 15px 0;margin: 0;}
+.modal-content {border-radius: 0;background: #212121;border: none;color:#cccccc;}
+.modal-body{padding:15px;}
+.modal-footer {border-top: 1px solid #666666;}
+.TLDlax .modal-body img {width: 100%;}
+iframe {border: none;}
+.close {
+    float: right;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+    color: #666;
+    text-shadow: none;
+    opacity: 1;
 }
-
-.loader.on {
-  transform: translate(0, 0px);
-  -ms-transform: translate(0, 0px); /* IE 9 */
-  -webkit-transform: translate(0, 0px); /* Safari */
-  -moz-transform: translate(0, 0px); /* mozilla */
-}
-
-.loader.off {
-  transform: translate(0px, -100%);
-  -ms-transform: translate(0px, -100%); /* IE 9 */
-  -webkit-transform: translate(0px, -100%); /* Safari */
-  -moz-transform: translate(0px, -100%); /* mozilla */
-}
-
-.loader > .copy {
-  color: white;
-  font-size: 40px;
-  padding: 25% 0 0 0;
-}
-
-.loader > .progress {
-  border: 1px solid white;
-  background-color: #777;
-  height: 20px;
-  width: 400px;
-  margin: 20px auto;
-}
-.loader > .progress > .complete { 
-  background-color: green;
-  height: 20px;
-  width: 0px;
-}
-.ftrbutton {
-    display: inline-block;
-    margin: 20px;
-    text-decoration: none;
-    padding: 15px 30px;
-    border: 2px solid #ff0000;
-    cursor: pointer;
-    text-align: center;
+.close:hover, .close:focus {
     color: #ffffff;
-    background-color: rgba(0,0,0,0.5);
-    -webkit-transition: background-color 0.1s linear;
-    -moz-transition: background-color 0.1s linear;
-    -o-transition: background-color 0.1s linear;
-    -ms-transition: background-color 0.1s linear;
-    transition: background-color 0.1s linear;
+    text-decoration: none;
+    cursor: pointer;
 }
-.ftrbutton:hover {background-color: #ff0000;}
+.glyphicon-play-circle {
+    font-size: 200%;
+    vertical-align: middle;
+    top: inherit;
+    padding: 0;
+    margin-right: 10px;
+}
+.glyphicon-map-marker, .glyphicon-triangle-right {    
+	font-size: 200%;
+    vertical-align: middle;
+    top: inherit;
+    padding: 0;
+    margin-left: 10px;}
+
+
+@media (max-width: 767px) {
+	h1 {font-size:30px;}
+	.navigation {display: none;}
+.wrapper.right, .wrapper.left {width: 100%;padding:50px;}
+.wrapper img {width:100%;}
+#slide3 {background-position: 75% 0;}
+#slide4 {background-position: 25% 0;}
+#slide5 {background-position: 75% 0;}
+#slide6 {background-position: 25% 0;}
+#slide6 .wrapper .btn-default {margin:10px 0;width:100%;text-align: left;}
+}
