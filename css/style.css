@@ -53,11 +53,11 @@ h4 {font-size:20px;}
 	width: 100%;
 	padding: 20px 50px;
 	margin: 0;
-	background: rgba(68, 74, 82, .75);
+	background: rgba(50,50,50,.65);
 }
 .wrapper.bottom{position:absolute;bottom:0;}
-.wrapper.right{background: rgba(255, 255, 255, 0.35);position:absolute;right:0;height:100%;width: 35%;padding-right:160px;max-width: 660px;}
-.wrapper.left{background: rgba(255, 255, 255, 0.35);position:absolute;left:0;height:100%;width: 35%;max-width: 500px;}
+.wrapper.right{position:absolute;right:0;height:100%;width: 35%;padding-right:160px;max-width: 660px;}
+.wrapper.left{position:absolute;left:0;height:100%;width: 35%;max-width: 500px;}
 .dbutton{
 	display:block;
 	width:50px;
@@ -73,7 +73,7 @@ h4 {font-size:20px;}
     line-height: 1.75em;
 }
 .dbutton:hover{
-	background-color:#ff0000;
+	background-color:#ff2c2c;
 	cursor:pointer;
 	color:#ffffff;
 }
@@ -123,6 +123,7 @@ button.popspot:focus{outline:none;}
     left: 0;
     background: rgba(255,255,255,0.5);
     padding: 10px 5px;
+    border-radius: 10px 0 10px 0;
 }
 .btn-default, .btn-default:visited, .btn-primary, .btn-primary:visited {
 	background: #ff2c2c;
@@ -170,14 +171,14 @@ button.popspot:focus{outline:none;}
  Intro
 *******************************/
 #intro{
-	background: #444a52;
+	background: #444444;
 	height: 400px;
 	margin: 0 auto;
 }
 
 .intro p {
     color: #ddd;
-    border-left: 1px solid #686d73;
+    border-left: 1px solid #666666;
     padding-left: 50px;
 }
 /******************************
@@ -265,7 +266,7 @@ left: 0;
 *******************************/
 
 #slide7{
-	background: #444a52;
+	background: #444444;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
