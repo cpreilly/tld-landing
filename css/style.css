@@ -6,13 +6,16 @@ html,body{
 	height:100%;
 }
 .TLDlax {width:100%;height:100%;font-family: "helvetica", sans-serif;}
-h1, h2, h3, h4 {letter-spacing: 5px;text-transform: uppercase;color: #ffffff;font-weight: 600;}
-h1 {font-size:36px;letter-spacing: 10px;}
+#ADVlax h1, #ADVlax h2, #ADVlax h3, #ADVlax h4 {letter-spacing: 5px;text-transform: uppercase;color: #ffffff;font-weight: 600;}
+#KTMlax h1, #KTMlax h2, #KTMlax h3, #KTMlax h4 {font-family:'lato', sans-serif;text-transform: uppercase;}
+#KTMlax {color:#ffffff;}
+h1 {font-size:36px;}
 h2 {font-size:30px;}
 h3 {font-size:26px;}
 h4 {font-size:20px;}
+#ADVlax h1 {letter-spacing: 10px;}
 .copy {color:#ffffff;}
-.hilite {color:#ff3c00;}
+.orange {color:#ff3c00;}
 .bigger {font-size:150% !important;}
 .navigation{
 	position:fixed;
@@ -43,6 +46,9 @@ h4 {font-size:20px;}
 }
 .slide{
 	background-attachment: fixed;
+	background-size: cover;
+	background-position: center 0;
+	background-repeat: no-repeat;
 	width:100%;
 	height:100%;
 	position: relative;
@@ -152,22 +158,6 @@ button.popspot:focus{outline:none;}
 }
 .shop {line-height: 300px;}
 /******************************
- SLIDE 1 
-*******************************/
-#slide1 {
-	background: url(../images/offroad/intro-bg.jpg) 50% 0 no-repeat fixed;
-	background-color:000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#slide1 > img:nth-child(1){
-	position:absolute;
-	top: -100px;
-	left: 30%;
-}
-/******************************
  Intro
 *******************************/
 #intro{
@@ -175,21 +165,29 @@ button.popspot:focus{outline:none;}
 	height: 400px;
 	margin: 0 auto;
 }
-
+.intro {text-align:center;width: 50%;margin: 20% auto;}
+.intro img {border-bottom: 1px solid #666666;padding:0 40px 20px;margin-bottom:20px;}
+.intro h1 {letter-spacing: 15px;font-weight: 100;margin:0;}
+.intro h2 {font-weight: 800;font-size: 76px;margin: 0 0 20px;}
+.intro h4 {font-weight: 200;letter-spacing: 5px;font-size: 25px;margin: 0;}
 .intro p {
-    color: #ddd;
-    border-left: 1px solid #666666;
-    padding-left: 50px;
+    color: #dddddd;
+}
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1 {
+	background-color:000000;
+}
+#slide1 > img:nth-child(1){
+	position:absolute;
+	top: -100px;
+	left: 30%;
 }
 /******************************
  SLIDE 2 
 *******************************/
 #slide2{
-	background-image: url(../images/offroad/inner-bg.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	background-color:#000000;
 }
 #slide2 > img:first-child{
@@ -201,11 +199,6 @@ left: 0;
  SLIDE 3 
 *******************************/
 #slide3{
-	background-position:50% 0;
-	background-image:url(../images/offroad/outer-bg.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-color:#000000;
 }
 #slide3 > img:first-child{
@@ -223,40 +216,21 @@ left: 0;
 *******************************/
 
 #slide4{
-	background-position:50% 0;
-	background-image:url(../images/offroad/accy-bg.jpg);
-	background-attachment: scroll;
 	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 /******************************
  SLIDE 5 
 *******************************/
 
 #slide5{
-	background-image:url(../images/offroad/pants-bg.jpg);
 	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 /******************************
  SLIDE 6
 *******************************/
 
 #slide6{
-	background-position:50% 0;
-	background-image:url(../images/offroad/video-bg.jpg);
-	background-attachment: scroll;
 	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	height: 720px;
 }
 #slide6 .wrapper {text-align: center;}
