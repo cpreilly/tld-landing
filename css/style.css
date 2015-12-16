@@ -167,7 +167,7 @@ button.popspot:focus{outline:none;}
 }
 .intro {text-align:center;width: 50%;margin: 20% auto;}
 .intro img {border-bottom: 1px solid #666666;padding:0 40px 20px;margin-bottom:20px;}
-.intro h1 {letter-spacing: 15px;font-weight: 100;margin:0;}
+.intro h1 {letter-spacing: 15px;font-weight: 100;margin:0;font-size:38px;text-indent:15px;}
 .intro h2 {font-weight: 800;font-size: 76px;margin: 0 0 20px;}
 .intro h4 {font-weight: 200;letter-spacing: 5px;font-size: 25px;margin: 0;}
 .intro p {
