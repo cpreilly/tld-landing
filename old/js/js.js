@@ -1,5 +1,14 @@
 jQuery(document).ready(function ($) {
- 
+
+  Pre.i($('.slide'), function(percentage) {
+    console.log( percentage * 400 );
+    $('.loader > .progress > .complete').css('width', (percentage*400) + 'px');
+  }, function() {
+    console.log('complete');
+    $('.loader > .progress > .complete').css('width', '400px');
+    _.off('.loader');
+    _.on('.TLDlax');
+  });
     //init fadethis.js
     $(window).fadeThis();
 
@@ -9,7 +18,7 @@ jQuery(document).ready(function ($) {
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.slide');
-    button = $('.dbutton');
+    button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
 
@@ -63,31 +72,8 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
+
     });
 
-   //When the user clicks on any class link, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
-    $('.link').click(function (e) {
-        e.preventDefault();
-        dataslide = $(this).attr('data-slide');
-        goToByScroll(dataslide);
-    });
-    
-  autoPlayYouTubeModal();
-
-  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-  function autoPlayYouTubeModal() {
-      var trigger = $("body").find('[data-toggle="modal"]');
-      trigger.click(function () {
-          var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-theVideo"),
-              videoSRCauto = videoSRC + "?autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-          //$(theModal + ' button.close').click(function () {
-              //$(theModal + ' iframe').attr('src', videoSRC);
-          $('#videoModal').on('hidden.bs.modal', function () {
-            $('#videoModal iframe').removeAttr('src');  
-          });
-      });
-  }
 
 });
