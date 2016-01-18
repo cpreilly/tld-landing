@@ -65,6 +65,7 @@ h4 {font-size:20px;}
 	left:50%;
 	margin-left:-25px;
 	transition: ease-in-out all .5s;
+	-webkit-transition: ease-in-out all .5s;
 	font-size: 36px;
     text-align: center;
     color: #ffffff;
@@ -100,6 +101,7 @@ h4 {font-size:20px;}
     font-size: 24px;
     line-height: 0em;
     transition: ease-in-out all .2s;
+	-webkit-transition: ease-in-out all .2s;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -110,6 +112,7 @@ button.popspot:focus{outline:none;}
 	font-size: 30px;
     cursor: pointer;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
     padding-bottom: 8px;
 }
 .popimg {width: 100%;max-width: 800px;}
