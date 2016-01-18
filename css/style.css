@@ -85,7 +85,15 @@ h4 {font-size:20px;}
 	cursor:pointer;
 	color:#ffffff;
 }
-#features {padding:70px 0;}
+#features, #lineup {padding:70px 0;}
+#features .ftr-copy {
+	background: rgba(0,0,0,0.5);
+    margin-right: 30%;
+    padding: 30px;
+    display: block;
+}
+#features .ftr-copy img {width:75%;}
+#features .ftr-copy .btn {margin-bottom: 10px;}
 .popspot {
     background-color: rgba(255,0,0,0.75);
     -moz-background-clip: padding;
@@ -113,7 +121,7 @@ button.popspot:focus{outline:none;}
     transform: rotate(180deg);
     padding-bottom: 8px;
 }
-.popimg {width: 100%;max-width: 1000px;}
+.popimg {width: 100%;max-width: 800px;}
 .popitem {
     position: relative;
     margin: 0 auto;
@@ -155,15 +163,22 @@ button.popspot:focus{outline:none;}
 	margin: 0 auto;
 }
 .intro {text-align:center;width: 100%;margin: 10% auto;padding:20px;}
-.intro-img {border-bottom: 1px solid #666666;padding:0 40px 20px;margin-bottom:20px;}
-.intro h1 {letter-spacing: 15px;font-weight: 200;margin:0;font-size:38px;text-indent:15px;}
-.intro h2 {font-weight: 800;font-size: 76px;margin: 0 0 10px;}
-.intro h4 {font-weight: 200;letter-spacing: 5px;font-size: 22px;margin: 0;}
+.intro-img {border-bottom: 1px solid #666666;padding:0 10px 20px;margin-bottom:20px;width:300px;}
+.intro h1 {letter-spacing: 10px;font-weight: 200;margin:0;font-size:20px;text-indent:10px;}
+.intro h2 {font-weight: 800;font-size: 40px;margin: 0 0 5px;}
+.intro h4 {font-weight: 200;letter-spacing: 3px;font-size: 11px;margin: 0;}
 .intro p {
     color: #dddddd;
 }
 a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
-.intro .link img {width: 100%;margin-top:20px;}
+.intro .link img {width: 75%;margin-top:20px;}
+/******************************
+ LINE UP
+*******************************/
+#lineup .row {margin:0;}
+#lineup span {padding:15px;}
+#lineup span img {width:75%;}
+
 /******************************
  SLIDE 1 
 *******************************/
@@ -277,6 +292,7 @@ iframe {border: none;}
 .intro h1 {letter-spacing: 5px;margin: 0;font-size: 20px;text-indent: 5px;}
 .intro h2 {font-size: 32px;margin: 0;}
 .intro h4 {letter-spacing: 0;font-size: 15px;margin: 0;}
+#features .ftr-copy {padding: 20px;margin-right:0;}
 .popimg {width:100%;}
 #slide3 {background-position: 75% 0;}
 #slide4 {background-position: 25% 0;}
