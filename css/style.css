@@ -120,8 +120,7 @@ button.popspot:focus{outline:none;}
     height: 100%;
 }
 .btn-default, .btn-default:visited, .btn-primary, .btn-primary:visited {
-	background: #ff2c2c;
-    color: #ffffff;
+	  color: #ffffff;
     border-radius: 0;
     border: none;
     padding: 10px 20px;
@@ -130,7 +129,11 @@ button.popspot:focus{outline:none;}
     font-size: 14px;
     transition: ease-in-out all .2s;
 }
-.btn-default:hover, .btn-primary:hover {background:#ff5858;color:#ffffff;text-shadow: 2px 2px 0px #de1e1e;}
+.btn-primary, .btn-primary:visited{background: #ff2c2c;}
+.btn-default, .btn-default:visited{background:#555555;}
+.btn-default:hover {background:#777777;color:#ffffff;text-shadow: 2px 2px 0px #666666;}
+.btn-primary:hover {background:#ff5858;color:#ffffff;text-shadow: 2px 2px 0px #de1e1e;}
+
 .btn-default:active, .btn-default:focus, .btn-primary:active, .btn-primary:focus {border:none;background:#de1e1e;color:#ffffff;text-shadow:none;}
 .flexctr{
 	display: -webkit-box;
@@ -228,15 +231,12 @@ left: 0;
 
 #slide6{
 	background-color: #000000;
-	height: 720px;
 }
-#slide6 .wrapper {text-align: center;}
-#slide6 .wrapper .btn-default {margin:10px;}
 /******************************
  SLIDE 7
 *******************************/
 
-#slide7{
+#slide8{
 	background: #444444;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -253,6 +253,12 @@ left: 0;
 .modal-content {border-radius: 0;background: #212121;border: none;color:#cccccc;}
 .modal-body{padding:15px;}
 .modal-footer {border-top: 1px solid #666666;}
+.modal-body h5 {
+    margin-bottom: 2px;
+    color: #777;
+    font-size: 19px;
+    text-transform: uppercase;
+}
 .TLDlax .modal-body img {width: 100%;}
 iframe {border: none;}
 .close {
