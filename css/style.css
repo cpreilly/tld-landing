@@ -78,7 +78,7 @@ h4 {font-size:20px;}
 	color:#ffffff;
 }
 #features, #lineup { padding: 10% 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
-#features div {height:100%;}
+#features .row, #features .col-md-7  {height:100%;}
 #features .ftr-copy {background: rgba(0,0,0,0.5);margin-right: 30%;padding: 30px;display: block;}
 #features .ftr-copy img {width:75%;}
 #features .ftr-copy .btn {margin-bottom: 10px;}
@@ -117,6 +117,7 @@ button.popspot:focus{outline:none;}
     margin: 0 auto;
     text-align: center;
     display: block;
+    height: 100%;
 }
 .btn-default, .btn-default:visited, .btn-primary, .btn-primary:visited {
 	background: #ff2c2c;
@@ -166,7 +167,7 @@ a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
  LINE UP
 *******************************/
 #lineup .row {margin:0;}
-#lineup span {padding:15px;}
+#lineup span {padding:15px;display:block;}
 #lineup span img {width:75%;}
 
 /******************************
