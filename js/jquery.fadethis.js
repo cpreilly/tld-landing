@@ -22,7 +22,7 @@
             easing:         "swing",
             offset:         0,
             reverse:        true,
-            distance:       150,
+            distance:       50,
             scrolledIn:     null,
             scrolledOut:    null
         },
