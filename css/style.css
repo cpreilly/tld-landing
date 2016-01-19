@@ -78,6 +78,7 @@ h4 {font-size:20px;}
 	color:#ffffff;
 }
 #features, #lineup { padding: 10% 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+#features h2, .intro h2, #lineup h3 {color:#ccff00;}
 #features .row, #features .col-md-7  {height:100%;}
 #features .ftr-copy {background: rgba(0,0,0,0.5);margin-right: 30%;padding: 30px;display: block;}
 #features .ftr-copy img {width:75%;}
@@ -151,21 +152,18 @@ button.popspot:focus{outline:none;}
 /******************************
  Intro
 *******************************/
-#intro{
-	background: #444444;
-	height: 400px;
-	margin: 0 auto;
-}
+
+#intro p img {float: left;padding-right: 10px;border-right: 1px #ccff00 solid;margin-right: 30px;}
+
+#intro {background: #444444;height: 400px;margin: 0 auto;}
 .intro {text-align:center;width: 100%;margin: 10% auto;padding:20px;}
-.intro-img {border-bottom: 1px solid #666666;padding:0 10px 20px;margin-bottom:20px;width:300px;}
+.intro-img {border-bottom: 1px solid #ccff00;padding:0 10px 20px;margin-bottom:20px;width:300px;}
 .intro h1 {letter-spacing: 10px;font-weight: 200;margin:0;font-size:20px;text-indent:10px;}
 .intro h2 {font-weight: 800;font-size: 40px;margin: 0 0 5px;}
 .intro h4 {font-weight: 200;letter-spacing: 3px;font-size: 11px;margin: 0;}
-.intro p {
-    color: #dddddd;
-}
+.intro p {color: #dddddd;}
 a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
-.intro .link img {width: 75%;margin-top:20px;}
+.intro .link img {width: 75%;margin-top:20px;border-bottom:1px solid #ccff00;}
 /******************************
  LINE UP
 *******************************/
@@ -283,6 +281,7 @@ iframe {border: none;}
 	h1 {font-size:30px;}
 .navigation {display: none;}
 #slide1 {height:100%;}
+#intro {height: auto;margin: 0 auto;padding: 30px 10px;}
 .slide {height: auto;background-size: auto 100%;background-attachment: scroll;}
 .intro {width: 100%;margin: 20% auto 0;}
 .intro img, .intro .link img {width:100%;}
