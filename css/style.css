@@ -134,8 +134,18 @@ button.popspot:focus{outline:none;}
 .btn-default, .btn-default:visited{background:#555555;}
 .btn-default:hover {background:#777777;color:#ffffff;text-shadow: 2px 2px 0px #666666;}
 .btn-primary:hover {background:#ff5858;color:#ffffff;text-shadow: 2px 2px 0px #de1e1e;}
-
 .btn-default:active, .btn-default:focus, .btn-primary:active, .btn-primary:focus {border:none;background:#de1e1e;color:#ffffff;text-shadow:none;}
+
+.btn-fade {
+    width: 100%;
+    background: #ff2c2c;
+    color: #ffffff;
+    padding: 15px 20px;
+    opacity: 0;
+		transition: .5s all ease .2s;
+}
+a:hover .btn-fade{opacity: 1;}
+
 .flexctr{
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -163,13 +173,15 @@ button.popspot:focus{outline:none;}
 .intro h4 {font-weight: 200;letter-spacing: 3px;font-size: 11px;margin: 0;}
 .intro p {color: #dddddd;}
 a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
-.intro .link img {width: 75%;margin-top:20px;border-bottom:1px solid #ccff00;}
+.intro .link img {width: 75%;margin-top:20px;border-bottom:1px solid #ccff00;transition: .5s all ease;-webkit-transition: .5s all ease;}
+.intro .link img:hover {margin-top: 5px;}
 /******************************
  LINE UP
 *******************************/
 #lineup .row {margin:0;}
 #lineup span {padding:15px;display:block;}
 #lineup span img {width:90%;}
+#lineup a, #lineup a:visited {text-decoration: none;}
 
 /******************************
  SLIDE 1 
