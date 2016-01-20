@@ -77,7 +77,7 @@ h4 {font-size:20px;}
 	cursor:pointer;
 	color:#ffffff;
 }
-#features, #lineup { padding: 10% 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+#features, #lineup { padding: 5% 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
 #features h2, .intro h2, #lineup h3 {color:#ccff00;}
 #features .row, #features .col-md-7  {height:100%;}
 #features .ftr-copy {background: rgba(0,0,0,0.5);margin-right: 30%;padding: 30px;display: block;}
@@ -98,7 +98,7 @@ h4 {font-size:20px;}
     font-size: 24px;
     line-height: 0em;
     transition: ease-in-out all .2s;
-	-webkit-transition: ease-in-out all .2s;
+		-webkit-transition: ease-in-out all .2s;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -129,6 +129,7 @@ button.popspot:focus{outline:none;}
     text-transform: uppercase;
     font-size: 14px;
     transition: ease-in-out all .2s;
+    -webkit-transition: ease-in-out all .2s;
 }
 .btn-primary, .btn-primary:visited{background: #ff2c2c;}
 .btn-default, .btn-default:visited{background:#555555;}
@@ -140,9 +141,10 @@ button.popspot:focus{outline:none;}
     width: 100%;
     background: #ff2c2c;
     color: #ffffff;
-    padding: 15px 20px;
+    padding: 15px 0 !important;
     opacity: 0;
-		transition: .5s all ease .2s;
+		transition: .25s all ease .2s;
+		-webkit-transition: .25s all ease .2s;
 }
 a:hover .btn-fade{opacity: 1;}
 
@@ -181,7 +183,8 @@ a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
 #lineup .row {margin:0;}
 #lineup span {padding:15px;display:block;}
 #lineup span img {width:90%;}
-#lineup a, #lineup a:visited {text-decoration: none;}
+#lineup a, #lineup a:visited {text-transform: uppercase;text-decoration: none;font-size: 12px;
+}}
 
 /******************************
  SLIDE 1 
@@ -202,8 +205,8 @@ a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
 }
 #slide2 > img:first-child{
 	position:absolute;
-top: 0;
-left: 0;
+top: 500;
+left: 200;
 }
 /******************************
  SLIDE 3 
