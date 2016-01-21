@@ -117,7 +117,7 @@ button.popspot:focus{outline:none;}
     margin: 0 auto;
     text-align: center;
     display: block;
-    height: 100%;
+    padding:50px;
 }
 .btn-default, .btn-default:visited, .btn-primary, .btn-primary:visited {
 	  color: #ffffff;
@@ -144,6 +144,9 @@ button.popspot:focus{outline:none;}
     opacity: 0;
 		transition: .25s all ease .2s;
 		-webkit-transition: .25s all ease .2s;
+		position: absolute;
+    bottom: 20%;
+    margin: 0 -15px;
 }
 a:hover .btn-fade{opacity: 1;}
 
@@ -304,6 +307,7 @@ iframe {border: none;}
 .intro h4 {letter-spacing: 0;font-size: 15px;margin: 0;}
 #features, #lineup {padding:70px 0;position: relative;}
 #features .ftr-copy {padding: 20px;margin-right:0;}
+.popitem {padding:10px;}
 .popimg {width:100%;}
 #slide3 {background-position: 75% 0;}
 #slide4 {background-position: 25% 0;}
