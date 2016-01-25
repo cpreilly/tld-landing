@@ -5,11 +5,8 @@ html,body{
 	width:100%;
 	height:100%;
 }
-.TLDlax {width:100%;height:100%;font-family: "helvetica", sans-serif;}
-#ADVlax h1, #ADVlax h2, #ADVlax h3, #ADVlax h4 {letter-spacing: 5px;text-transform: uppercase;color: #ffffff;font-weight: 600;}
-#KTMlax h1, #KTMlax h2, #KTMlax h3, #KTMlax h4 {font-family:'lato', sans-serif;text-transform: uppercase;}
-#BHlax h1, #BHlax h2, #BHlax h3, #BHlax h4 {font-family:'lato', sans-serif;text-transform: uppercase;}
-#KTMlax, #BHlax {color:#ffffff;}
+.TLDlax {width:100%;height:100%;font-family: "helvetica", sans-serif;color:#ffffff;}
+h1, h2, h3, h4, h5 {font-family:'lato', sans-serif;text-transform: uppercase;}
 h1 {font-size:36px;}
 h2 {font-size:30px;}
 h3 {font-size:26px;}
@@ -46,16 +43,22 @@ h4 {font-size:20px;}
 	width:130px !important;
 }
 .slide{
+	background:#444444;
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size:cover;
 	background-position: center 0;
 	background-repeat: no-repeat;
 	width:100%;
-	height:100%;
+	min-height:100%;
 	position: relative;
-	overflow: hidden;
+
 }
+/******************************
+ SLIDES
+*******************************/
+#slide8 {min-height: 300px;}
+
 .dbutton{
 	display:block;
 	width:50px;
@@ -77,10 +80,10 @@ h4 {font-size:20px;}
 	cursor:pointer;
 	color:#ffffff;
 }
-#features, #lineup { padding: 5% 0;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+#features { padding: 0;}
 #features h2, .intro h2, #lineup h3 {color:#ccff00;}
-#features .row, #features .col-md-7  {height:100%;}
-#features .ftr-copy {background: rgba(0,0,0,0.5);margin-right: 30%;padding: 30px;display: block;}
+#features .row, #features .col-md-7  {height:100%;margin:0;}
+#features .ftr-copy {background: rgba(0,0,0,0.5);margin:10% 30% 0 0;padding: 30px;display: block;}
 #features .ftr-copy img {width:75%;}
 #features .ftr-copy .btn {margin-bottom: 10px;}
 .popspot {
@@ -117,10 +120,11 @@ button.popspot:focus{outline:none;}
     margin: 0 auto;
     text-align: center;
     display: block;
-    padding:50px;
+	width: 100%;
+	height:100%;
 }
 .btn-default, .btn-default:visited, .btn-primary, .btn-primary:visited {
-	  color: #ffffff;
+	color: #ffffff;
     border-radius: 0;
     border: none;
     padding: 10px 20px;
@@ -169,8 +173,8 @@ a:hover .btn-fade{opacity: 1;}
 
 #intro p img {float: left;padding-right: 10px;border-right: 1px #ccff00 solid;margin-right: 30px;}
 
-#intro {background: #444444;height: 400px;margin: 0 auto;}
-.intro {text-align:center;width: 100%;margin: 10% auto;padding:20px;}
+#intro {background: #444444;min-height: 400px;margin: 0 auto;}
+.intro {text-align:center;width: 100%;margin: 0 auto;padding:10% 20px 20px;}
 .intro-img {border-bottom: 1px solid #ccff00;padding:0 10px 20px;margin-bottom:20px;width:300px;}
 .intro h1 {letter-spacing: 10px;font-weight: 200;margin:0;font-size:20px;text-indent:10px;}
 .intro h2 {font-weight: 800;font-size: 40px;margin: 0 0 5px;}
@@ -185,80 +189,8 @@ a.link {color: #ffffff;text-decoration: none;display: block;cursor: pointer;}
 #lineup .row {margin:0;}
 #lineup span {padding:15px;display:block;}
 #lineup span img {width:90%;}
-#lineup a, #lineup a:visited {text-transform: uppercase;text-decoration: none;font-size: 12px;
-}}
+#lineup a, #lineup a:visited {text-transform: uppercase;text-decoration: none;font-size: 12px;}
 
-/******************************
- SLIDE 1 
-*******************************/
-#slide1 {
-	background-color:000000;
-}
-#slide1 > img:nth-child(1){
-	position:absolute;
-	top: -100px;
-	left: 30%;
-}
-/******************************
- SLIDE 2 
-*******************************/
-#slide2{
-	background-color:#000000;
-}
-#slide2 > img:first-child{
-	position:absolute;
-top: 500;
-left: 200;
-}
-/******************************
- SLIDE 3 
-*******************************/
-#slide3{
-	background-color:#000000;
-}
-#slide3 > img:first-child{
-	position:absolute;
-	top: 0px;
-	left: 0px;
-}
-#slide3 > img:nth-child(2){
-	position:absolute;
-	top:0px;
-	left:0px;
-}
-/******************************
- SLIDE 4 
-*******************************/
-
-#slide4{
-	background-color: #000000;
-}
-/******************************
- SLIDE 5 
-*******************************/
-
-#slide5{
-	background-color: #000000;
-}
-/******************************
- SLIDE 6
-*******************************/
-
-#slide6{
-	background-color: #000000;
-}
-/******************************
- SLIDE 7
-*******************************/
-
-#slide8{
-	background: #444444;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 300px;
-}
 /******************************
  VIDEO MODAL
 *******************************/
@@ -292,7 +224,7 @@ iframe {border: none;}
 }
 .btn-icon-r {font-size: 200%;vertical-align: middle;top: inherit;padding: 0;margin-left:10px;}
 .btn-icon-l {font-size: 200%;vertical-align: middle;top: inherit;padding: 0;margin-right:10px;}
-
+.vertical-align {display: flex;align-items: center;}
 
 @media (max-width: 767px) {
 	h1 {font-size:30px;}
@@ -300,12 +232,12 @@ iframe {border: none;}
 #slide1 {height:100%;}
 #intro {height: auto;margin: 0 auto;padding: 30px 10px;}
 .slide {height: auto;background-size: auto 100%;background-attachment: scroll;}
-.intro {width: 100%;margin: 20% auto 0;}
+.intro {width: 100%;margin: 0 auto;padding-top: 20%;}
 .intro img, .intro .link img {width:100%;}
 .intro h1 {letter-spacing: 5px;margin: 0;font-size: 20px;text-indent: 5px;}
 .intro h2 {font-size: 32px;margin: 0;}
 .intro h4 {letter-spacing: 0;font-size: 15px;margin: 0;}
-#features, #lineup {padding:70px 0;position: relative;}
+#features, #lineup {position: relative;}
 #features .ftr-copy {padding: 20px;margin-right:0;}
 .popitem {padding:10px;}
 .popimg {width:100%;}
@@ -314,4 +246,6 @@ iframe {border: none;}
 #slide5 {background-position: 75% 0;}
 #slide6 {background-position: 25% 0;}
 #slide6 .wrapper .btn-default {margin:10px 0;width:100%;text-align: left;}
+#slide8 {height: auto;}
+.vertical-align {display: block;}
 }
