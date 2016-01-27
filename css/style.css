@@ -80,10 +80,13 @@ h4 {font-size:20px;}
 	cursor:pointer;
 	color:#ffffff;
 }
-#features { padding: 0;}
+#features { 
+		padding: 50px 150px 50px 50px;
+    max-height: 100vh;
+  }
 #features h2, .intro h2, #lineup h3 {color:#ccff00;}
-#features .row, #features .col-md-7  {height:100%;margin:0;}
-#features .ftr-copy {background: rgba(0,0,0,0.5);margin:10% 30% 0 0;padding: 30px;display: block;}
+#features .row, #features .col-md-7  {height:auto;margin:0;}
+#features .ftr-copy {background: rgba(0,0,0,0.5);padding: 30px;display: block;}
 #features .ftr-copy img {width:75%;}
 #features .ftr-copy .btn {margin-bottom: 10px;}
 .popspot {
@@ -114,7 +117,7 @@ button.popspot:focus{outline:none;}
     -webkit-transform: rotate(180deg);
     padding-bottom: 8px;
 }
-.popimg {max-height: 100%;max-width: 100%;}
+.popimg {max-height: 100%;max-width: 75%;}
 .popitem {
     position: relative;
     margin: 0 auto;
@@ -236,15 +239,16 @@ iframe {border: none;}
 .intro h1 {letter-spacing: 5px;margin: 0;font-size: 20px;text-indent: 5px;}
 .intro h2 {font-size: 32px;margin: 0;}
 .intro h4 {letter-spacing: 0;font-size: 15px;margin: 0;}
-#features, #lineup {position: relative;}
+#features, #lineup {position: relative;padding: 0 0 60px;max-height: 100%;}
 #features .ftr-copy {padding: 20px;margin-right:0;}
 .popitem {padding:10px;}
-.popimg {width:100%;}
+.popimg {width:100%;max-width: 100%;}
 #slide3 {background-position: 75% 0;}
 #slide4 {background-position: 25% 0;}
 #slide5 {background-position: 75% 0;}
 #slide6 {background-position: 25% 0;}
 #slide6 .wrapper .btn-default {margin:10px 0;width:100%;text-align: left;}
 #slide8 {height: auto;}
+.shop {line-height: 90px;}
 .vertical-align {display: block;}
 }
