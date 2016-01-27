@@ -81,8 +81,8 @@ h4 {font-size:20px;}
 	color:#ffffff;
 }
 #features { 
-		padding: 50px 150px 50px 50px;
-    max-height: 100vh;
+	padding: 50px 150px 50px 50px;
+   	height: 100vh;
   }
 #features h2, .intro h2, #lineup h3 {color:#ccff00;}
 #features .row, #features .col-md-7  {height:auto;margin:0;}
@@ -149,14 +149,16 @@ button.popspot:focus{outline:none;}
     color: #ffffff;
     padding: 15px 0 !important;
     opacity: 0;
-		transition: .25s all ease .2s;
-		-webkit-transition: .25s all ease .2s;
-		position: absolute;
+	transition: .25s all ease .2s;
+	-webkit-transition: .25s all ease .2s;
+	position: absolute;
     bottom: 20%;
     margin: 0 -15px;
+    line-height: 1.1em;
+    font-weight: 200;
 }
 a:hover .btn-fade{opacity: 1;}
-
+.btn-fade i {display:block;font-weight:600;font-weight: 800;font-style: normal;text-indent: 8px;font-size:11px;}
 .shop {line-height: 300px;}
 /******************************
  Intro
@@ -239,7 +241,7 @@ iframe {border: none;}
 .intro h1 {letter-spacing: 5px;margin: 0;font-size: 20px;text-indent: 5px;}
 .intro h2 {font-size: 32px;margin: 0;}
 .intro h4 {letter-spacing: 0;font-size: 15px;margin: 0;}
-#features, #lineup {position: relative;padding: 0 0 60px;max-height: 100%;}
+#features, #lineup {position: relative;padding: 0 0 60px;max-height: 100%;height: auto;}
 #features .ftr-copy {padding: 20px;margin-right:0;}
 .popitem {padding:10px;}
 .popimg {width:100%;max-width: 100%;}
