@@ -3,8 +3,34 @@ jQuery(document).ready(function ($) {
     //init fadethis.js
     $(window).fadeThis();
 
+var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function () {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
+        if (isMobile.any()) {
+
+        }
+        else {
     //initialise Stellar.js
     $(window).stellar();
+        }
 
     //Cache some variables
     var links = $('.navigation').find('li');
