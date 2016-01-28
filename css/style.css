@@ -228,13 +228,14 @@ iframe {border: none;}
 	align-items: center;
 
 }
-
+@media (max-width: 1023px){
+.slide {height: auto;background-size: auto 100%;background-attachment: scroll !important;}
+}
 @media (max-width: 767px) {
 	h1 {font-size:30px;}
 .navigation {display: none;}
 #slide1 {height:100%;}
 #intro {height: auto;margin: 0 auto;padding: 30px 10px;}
-.slide {height: auto;background-size: auto 100%;background-attachment: scroll !important;}
 .intro {width: 100%;margin: 0 auto;padding-top: 20%;}
 .intro img, .intro .link img {width:100%;}
 .intro h1 {letter-spacing: 5px;margin: 0;font-size: 20px;text-indent: 5px;}
